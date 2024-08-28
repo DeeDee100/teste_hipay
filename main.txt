@@ -1,0 +1,6 @@
+1) select usr.name, usr.email, cl.description as claims, rl.description as role from users usr, claims cl, roles rl, user_claims uc
+where usr.id = uc.user_id 
+and cl.id = uc.claim_id
+and rl.id = usr.role_id;
+
+2)
