@@ -70,12 +70,20 @@ INSERT INTO user_claims (user_id, claim_id) VALUES (3, 3);
 
 
 
+--Para pesquisar o nome, email, role e permissão de cada usuário:
+
 select usr.name, usr.email, cl.description as claims, rl.description as role from users usr, claims cl, roles rl, user_claims uc
 where usr.id = uc.user_id 
 and cl.id = uc.claim_id
 and rl.id = usr.role_id;
 
+-- Ou para pesquisar um user específico:
 
+select usr.name, usr.email, cl.description as claims, rl.description as role from users usr, claims cl, roles rl, user_claims uc
+where usr.name = 'Bob'
+and usr.id = uc.user_id 
+and cl.id = uc.claim_id
+and rl.id = usr.role_id;
 
 
 

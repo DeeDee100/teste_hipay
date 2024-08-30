@@ -3,4 +3,14 @@ where usr.id = uc.user_id
 and cl.id = uc.claim_id
 and rl.id = usr.role_id;
 
-2)
+2) results = session.query(
+    user.name,
+    user.email,
+    claims.description.label('claims'),
+    roles.description.label('role')
+).join(user_claims, user.id == user_claims.user_id
+).join(claims, claims.id == user_claims.claim_id
+).join(roles, roles.id == user.role_id
+).all()
+
+3) 
