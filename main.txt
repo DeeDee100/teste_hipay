@@ -13,4 +13,7 @@ and rl.id = usr.role_id;
 ).join(roles, roles.id == user.role_id
 ).all()
 
-3) 
+3) Endpoint criado
+4) Endpoint criado
+5) Readme criado
+6)
