@@ -48,18 +48,19 @@ Diante da stacktrace apresentada a provável causa de erro é a falta de uma var
 
 Melhorias sugeridas:
  
-    * Criar variáveis de ambiente em um arquivo .env para valores hardcoded do código, como por exemplo a conexao com o banco de dados
+    * Criar variáveis de ambiente em um arquivo .env para valores hardcoded do código, como por exemplo a conexão com o banco de dados
     * Adicionar tratamento de erros quando tentar ler a variável no arquivo de configuração
-    * Variável  "var1" com conme genérico, colocar um nome mais decritivo
-    * Trocar nome da função "task1" para um nome que seja mais legivel e seja fácil de entender o que a função faz
-    * Dentro de task1, pense em fazer a query pela orm do SQLAlchemy ao invés de usar SQL direto no código
+    * Variável "var1" com nome genérico, colocar um nome mais descritivo
+    * Trocar nome da função "task1" para um nome que seja mais legível  e seja fácil de entender o que a função faz
+    * Dentro de task1, pense em fazer a query pela ORM do SQLAlchemy ao invés de usar SQL direto no código
     * Usar o logger para informações ao invés de print
-    * Adicionar tratamento de erro para o export em excel 
+    * Adicionar tratamento de erro para o export em Excel 
     * Adicionar documentação 
     * Adicionar testes 
-    * Adicinar uma função responsável apenas para o logging
+    * Adicionar uma função responsável apenas para o logging
     * Quebrar a função task1 em mais de uma para que cada uma tenha uma única função 
 
 # Questão 8
 Diante do problema proposto, utilizaria o Adapter Pattern ou padrão adaptador pois é um padrão utilizado para converter uma interface de uma classe em outra interface que o cliente espera receber.
-Isso se torna muito útil quando lidamos com vários provedores de email e podemos criar uma classe EmailService por exemplo com uma função de enviar email(sendEmail) e criar adapdatores específicos para cada provedor que implemente sua própria versão do "sendEmail".
+Isso se torna muito útil quando lidamos com vários provedores de Email e podemos criar uma classe EmailService por exemplo com uma função de enviar email(sendEmail) e criar adaptadores específicos para cada provedor que implemente sua própria versão do "sendEmail".
+
